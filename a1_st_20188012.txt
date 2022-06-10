@@ -1,0 +1,39 @@
+A1_selected
+-topics
+
+
+Name toka ibahem ibrahem
+id 20188012
+
+
+***************************************************************************************************
+the functions whose contains bugs(fais)
+1- combine
+when it takes 2 diff ranges its reuturn  the lower one only.
+
+2-Expand
+return incorrect lowerbound and doesnt calculate  lower margin.
+
+3-contains
+
+Does not return lower bound (not found (not exist)) 
+
+4- intersects 
+its return true whether it doesnt have intersections and the  two ranges are not same .
+
+*****************************************************************************************************
+exception which include bugs(fail)
+in testshift2
+Expected :Range[2.0,9.0]
+Actual   :Range[3.0,9.0]
+**********************************
+in testshift
+expected :java.security.InvalidParameterException
+Actual   :java.lang.IllegalArgumentException
+***********
+in expand 
+
+Expected :Range[1.0,8.0]
+Actual   :Range[3.4,8.28]
+
+
